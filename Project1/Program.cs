@@ -24,10 +24,7 @@ namespace School
                 one
             };
 
-
-            //var courseComparer = new CourseComparer();
-            //courseComparer.compareField = CourseComparer.SortBy.Credits;
-            //courses.Sort(courses, courseComparer);
+            
 
         }
     }

@@ -10,16 +10,26 @@ namespace School
         private SortBy compareField = SortBy.Name;
         public int Compare(Course? x, Course? y)
         {
-            switch(compareField)
+            if(x.Name.CompareTo(y.Name)!= 0)
             {
-                case SortBy.Credits:
-                    return x.Credits.CompareTo(y.Credits);
-                    break;
-                default:
-                    break;
-
+                return x.Name.CompareTo(y.Name);
             }
-            return x.Name.CompareTo(y.Name);
+            else if(x.Title.CompareTo(y.Title)!= 0)
+            {
+                return x.Title.CompareTo(y.Title);
+            }
+            else if(x.Credits.CompareTo(y.Credits)!= 0)
+            {
+                return x.Credits.CompareTo(y.Credits);
+            }
+            else if(x.Description.CompareTo(y.Description)!= 0)
+            {
+                return x.Description.CompareTo(y.Description);
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 namespace School
 {
 
-    public class Course
+    public class Course : IComparer<Course>
     {
 
     //Name (ex. "CSCI 330)
@@ -21,6 +21,30 @@ namespace School
             return $"~~{Name}({Credits}): {Title}-\n    {Description}.";
         } 
 
+        public int Compare(Course? x, Course? y)
+        {
+            if(x.Name.CompareTo(y.Name) != 0)
+            {
+                return x.Name.CompareTo(x.Name);
+            }
+            else if(x.Title.CompareTo(y.Title) != 0)
+            {
+                return x.Title.CompareTo(x.Title);
+            }
+            else if(x.Credits.CompareTo(y.Credits) != 0)
+            {
+                return x.Credits.CompareTo(x.Credits);
+            }
+            else if(x.Description.CompareTo(y.Description) != 0)
+            {
+                return x.Description.CompareTo(x.Description);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        
     }
 
 }
