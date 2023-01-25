@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace School
 {
-    
     class Program
     {
-        
         static void Main(string[] args)
         {
             Console.WriteLine("Sorted List of Classes:");
@@ -53,8 +51,6 @@ namespace School
                 Description="Basic concepts and terminology of operating systems, I/0 and interrupt structures, etc...", 
             };
 
-            //Console.WriteLine(one);
-
             List<Course> courses = new List<Course>(){
                 one, two, three, four, five, six
             };
@@ -72,5 +68,4 @@ namespace School
             }
         }
     }
-
 }

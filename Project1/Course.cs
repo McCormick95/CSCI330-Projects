@@ -12,11 +12,9 @@ namespace School
     //Title (ex. "Systems Analysis and Software Engineering")
         public string Title {get; set;}
     //Credits (ex. 3.0)
-        //public int Credits {get; set;}
         public int Credit {get; set;}
 
-
-        //Description (ex. "Topics include requirements engineering, unite testting, etc...")
+    //Description (ex. "Topics include requirements engineering, unite testting, etc...")
         public string Description {get; set;}
         
 
