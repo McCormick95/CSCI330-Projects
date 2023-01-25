@@ -13,13 +13,8 @@ namespace School
         public string Title {get; set;}
     //Credits (ex. 3.0)
         //public int Credits {get; set;}
-        public int Credit { get => ICreditable();  set => ICreditable(); }
+        public int Credit {get; set;}
 
-        private int ICreditable() {
-  
-            return this.Credit;
-            // throw new NotImplementedException();
-       }
 
         //Description (ex. "Topics include requirements engineering, unite testting, etc...")
         public string Description {get; set;}
