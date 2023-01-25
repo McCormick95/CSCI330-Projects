@@ -4,7 +4,7 @@ namespace School
     {
         public int Compare(Course x, Course y)
         {
-            return x.Credits-y.Credits;
+            return x.Credit-y.Credit;
         }
     }
 }
